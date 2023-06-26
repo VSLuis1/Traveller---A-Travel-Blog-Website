@@ -1,0 +1,252 @@
+/* styles.css */
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  /* Set basic styles for body */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #464646;
+    color: #fff;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 38px;
+    padding-top: 13px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Style the hero section */
+  .hero {
+    background-image: url('images/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px;
+    color: #fff;
+  }
+  
+  .hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .hero .btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  
+  /* Style the features section */
+  .features {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 70px;
+    margin-left: 105px;
+  }
+  
+  .features .feature {
+    flex-basis: 30%;
+  }
+  
+  .features .feature img {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .features h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .features p {
+    margin-bottom: 20px;
+  }
+  
+  .features a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  /* Style the testimonials section */
+  .testimonials {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 60px 0;
+  }
+  
+  .testimonial {
+    display: inline-block;
+    max-width: 400px;
+    margin: 0 auto 30px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial blockquote {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial cite {
+    font-style: italic;
+    color: #777;
+  }
+  
+  /* Style the about section */
+  .about {
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  /* Style the contact section */
+  .contact {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .contact form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .contact input,
+  .contact textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #383838;
+  }
+  
+  .contact button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #252525;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #464646;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Media queries for responsiveness */
+  
+  /* For screens smaller than 600px */
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    header h1 {
+      margin-bottom: 0;
+    }
+  
+    nav ul li {
+      display: block;
+      margin-right: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  
+    .hero {
+      padding: 50px;
+    }
+  
+    .features {
+      flex-wrap: wrap;
+    }
+  
+    .features .feature {
+      flex-basis: 100%;
+      margin-bottom: 40px;
+    }
+  
+    .testimonials .testimonial {
+      max-width: 100%;
+    }
+  }
+  
+  /* For screens between 601px and 900px */
+  @media (min-width: 601px) and (max-width: 900px) {
+    .features .feature {
+      flex-basis: 45%;
+    }
+  }
+  
+  /* For screens between 901px and 1200px */
+  @media (min-width: 901px) and (max-width: 1200px) {
+    .features .feature {
+      flex-basis: 30%;
+    }
+  }
+  
